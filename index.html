@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo</title>
-
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="todo">
-            <h2 class="todo-title">To-Do List</h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add Your Text" >
-                <button>Addß</button>
-            </div>
-        </div>
-    </div>
+  <div class="todo-container">
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Добавьте новую задачу">
+    <button id="addTaskBtn">Добавить задачу</button>
+    <ul id="taskList"></ul>
+    <div>
+      <button id="filterAll">Все</button>
+      <button id="filterCompleted">Выполненные</button>
+      <button id="filterActive">Не выполненные</button>
 
-    <script src="./main.js"></script>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
 </body>
 </html>
